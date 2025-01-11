@@ -1,0 +1,38 @@
+project-root/
+│
+├── public/                  # Static files served to the client
+│   ├── css/                 # Stylesheets
+│   │   └── styles.css       # Main stylesheet
+│   ├── js/                  # Client-side JavaScript
+│   │   └── main.js          # Main client-side script
+│   ├── images/              # Static images (if needed)
+│   └── index.html           # Entry point for the app
+│
+├── src/                     # Application source code
+│   ├── routes/              # Server-side route handlers
+│   │   ├── api.js           # API endpoints
+│   │   └── pages.js         # Routes serving HTML pages
+│   ├── models/              # Database models
+│   │   ├── days.js          # "Days" schema/model
+│   │   ├── workoutTypes.js  # "Workout Types" schema/model
+│   │   ├── exercises.js     # "Exercises" schema/model
+│   │   └── workouts.js      # "Workouts" schema/model
+│   ├── controllers/         # Logic to handle requests and responses
+│   │   ├── exercises.js     # Controller for exercise operations
+│   │   └── workouts.js      # Controller for workout operations
+│   └── db/                  # Database configuration and connection
+│       └── database.js      # Connection setup and utilities
+│
+├── migrations/              # Database migrations (if needed)
+│   ├── 001_create_tables.sql
+│   └── 002_add_initial_data.sql
+│
+├── tests/                   # Unit and integration tests
+│   ├── api.test.js          # Tests for API endpoints
+│   └── database.test.js     # Tests for database interactions
+│
+├── package.json             # Dependencies and project metadata
+├── .env                     # Environment variables (e.g., database URL)
+├── .gitignore               # Files and directories to ignore in Git
+├── README.md                # Documentation for your app
+└── server.js                # Entry point for the server
